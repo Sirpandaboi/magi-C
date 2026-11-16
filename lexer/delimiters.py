@@ -20,7 +20,7 @@ TRANSFER_DEL = SPACE_DEL | {";", "#"}
 OPEN_PAREN_DEL = LETTERS | NUMBERS | SPACE_DEL | {"(", ")", "~", "+", "-", "!",'"', "#"}
 CLOSE_PAREN_DEL = MATH_OP | REL_OP | AND_OR_OP | SPACE_DEL | {")", "{", "}", "]", "!", ";", ",", ":", "#"}
 OPEN_CURLY_DEL = LETTERS | NUMBERS | SPACE_DEL | {"(", "{", "}", "~", "+", "-", "!", '"', "#"}
-CLOSE_CURLY_DEL = LETTERS | SPACE_DEL | {"}", ";", ",", "#"}
+CLOSE_CURLY_DEL = LETTERS | SPACE_DEL | {"}", ";", ",", "#", None}
 OPEN_BRACKET_DEL = LETTERS | NUMBERS | SPACE_DEL | {"(", "~", "+", "-", "#"}
 CLOSE_BRACKET_DEL = MATH_OP | REL_OP | AND_OR_OP | SPACE_DEL | {")", "}", "[", "]", "!", ";", ",", ":", "#"}
 

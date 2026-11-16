@@ -1,4 +1,3 @@
-# parser/parser.py
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -135,7 +134,7 @@ class LL1Parser:
             kind = getattr(tok, "kind", None) or getattr(tok, "type", None)
             if isinstance(tok, tuple) and tok:
                 kind = tok[0]
-            if kind in {"NEWLINE", "WHITESPACE", "COMMENT"}:
+            if kind in self.IGNORED_TOKENS:
                 continue
             filtered.append(tok)
 
